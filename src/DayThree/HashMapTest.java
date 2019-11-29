@@ -39,6 +39,7 @@ public class HashMapTest {
         boolean keyRepeat=false;
         if (temp == null) {  //此处数组元素为空 则直接把新结点放进去
             table[newNode.hash] = newNode;
+            size++;
         } else {//如果此处数组元素不为空，则遍历对应的链表
             //遍历对应的链表
             while (temp != null) {
@@ -58,6 +59,7 @@ public class HashMapTest {
             }
             if(keyRepeat==false){  //如果没有发生key重复的情况则加到链表最后面
                 iterLast.next = newNode;
+                size++;
             }
         }
     }
