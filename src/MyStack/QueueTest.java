@@ -11,7 +11,7 @@ package MyStack;
 *
 * 队列的常用的操作是 enqueue：数据元素入队
 *                   dequeue:队首元素出队
-*                    peek：取出队首元素
+*                    peek：取队首元素
 * */
 public class QueueTest {
 }
