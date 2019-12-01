@@ -2,8 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="028d385e-fcff-4d5a-bca0-283158e989d0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/MyThread/ExecutorsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/DailyStudy/DayFour/Container.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/DailyStudy/DayFour/GenericTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/DailyStudy/DayFour/MyCollection.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/DailyStudy/DayFour/TestCollection.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/DailyStudy/MyStack/QueueTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/DailyStudy/MyStack/StackTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/DailyStudy/MyStack/TestConvert.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/DailyStudy/MyThread/ExecutorsTest$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/DailyStudy/MyThread/ExecutorsTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/DailyStudy/MyThread/MyBlockingQueue$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/DailyStudy/MyThread/MyBlockingQueue$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/DailyStudy/MyThread/MyBlockingQueue.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyThread/ExecutorsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyThread/ExecutorsTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -101,12 +113,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MyThread/ExecutorsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+            <state relative-caret-position="248">
+              <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#678#679#0" expanded="true" />
-                <element signature="e#736#737#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -202,12 +212,6 @@
               <item name="DailyStudy" type="b2602c69:ProjectViewProjectNode" />
               <item name="DailyStudy" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DailyStudy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DailyStudy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="MyThread" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -405,7 +409,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575167622385</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="测试线程池">
+      <created>1575169862907</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1575169862907</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -421,7 +432,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.25551683" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.2548807" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -429,7 +440,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50053304" side_tool="true" weight="0.22451194" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49840087" weight="0.12567714" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32936078" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3286334" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -452,7 +463,8 @@
     <MESSAGE value="队列的基本概念" />
     <MESSAGE value="使用队列把十进制转换为二进制" />
     <MESSAGE value="利用循环队列实现线程安全的入队和出队" />
-    <option name="LAST_COMMIT_MESSAGE" value="利用循环队列实现线程安全的入队和出队" />
+    <MESSAGE value="测试线程池" />
+    <option name="LAST_COMMIT_MESSAGE" value="测试线程池" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/lang/Object.java">
@@ -760,12 +772,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MyThread/ExecutorsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+        <state relative-caret-position="248">
+          <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#678#679#0" expanded="true" />
-            <element signature="e#736#737#0" expanded="true" />
           </folding>
         </state>
       </provider>
