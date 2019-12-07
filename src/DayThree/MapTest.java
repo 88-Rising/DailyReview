@@ -78,7 +78,7 @@ public class MapTest {
        Employee e1=new Employee(1001,"haha",10000);
        Employee e2=new Employee(1002,"heihei",20000);
        Employee e3=new Employee(1003,"hehe",20222);
-      Employee e4=new Employee(1003,"hehahe",30000);
+       Employee e4=new Employee(1003,"hehahe",30000);
        Map<Integer,Employee> map=new HashMap<>();
 
        map.put(1001,e1);
@@ -91,9 +91,6 @@ public class MapTest {
 
        Employee emp = map.get(1001);
        System.out.println(emp.getEname());
-
-
-
 
     }
 }
