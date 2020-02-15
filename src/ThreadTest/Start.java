@@ -18,4 +18,10 @@ public class Start {
     * 7.每个线程在自己的工作内存交互，加载和存储主内存控制不当会造成数据不一致
     *
     * */
+    /*
+    * 创建线程常用的两种方式：
+    * 1.继承Thread类作为Thread子类重写run方法，调用子类对象的start方法
+    * 2.实现Runnable接口的类重写run方法 然后创建一个Thread对象来调用start方法
+    *
+    * */
 }
