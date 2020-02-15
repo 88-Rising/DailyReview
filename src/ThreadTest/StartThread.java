@@ -19,7 +19,7 @@ public class StartThread extends Thread {
 
     public static void main(String[] args) {
         StartThread st = new StartThread();
-       // st.start();真正启动了一个线程
+       // st.start();真正启动了一个线程 不保证立即运行 依靠CPU调度
         //st.run();不是真正的启动一个线程 只是调用了run方法所以必须是先学习才能coding
         for(int i=0;i<20;i++) {
             System.out.println("一边coding");
