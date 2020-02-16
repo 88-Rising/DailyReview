@@ -7,7 +7,7 @@ package ThreadTest;
  * */
 public class Unsafe01 {
     public static void main(String[] args) {
-        Account account=new Account(100,"结婚礼金");
+        Account account=new Account(1000,"结婚礼金");
         Drawing you =new Drawing(account, 80,"可悲的你");
         Drawing wife =new Drawing(account,90,"可悲的你");
         you.start();
@@ -37,18 +37,27 @@ class Drawing extends Thread{
 
     @Override
     public void run() {
-        if(account.money-drawingMoney<0){
-            return;
-        }
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        account.money-=drawingMoney;
-        packetTotal+=drawingMoney;
-        System.out.println(this.getName()+"-->账户余额："+account.money);
-        System.out.println(this.getName()+"-->口袋里的钱："+packetTotal);
+        test();
 
+    }
+    /*
+    * 同步代码块 synchronized(obj){}  obj称为同步监视器
+    *
+    * */
+    public  void test() {
+        synchronized (account) {
+            if (account.money - drawingMoney < 0) {
+                return;
+            }
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            account.money -= drawingMoney;
+            packetTotal += drawingMoney;
+            System.out.println(this.getName() + "-->账户余额：" + account.money);
+            System.out.println(this.getName() + "-->口袋里的钱：" + packetTotal);
+        }
     }
 }

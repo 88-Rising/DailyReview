@@ -24,7 +24,7 @@ public class Safe {
                 test();
             }
         }
-        public synchronized  void test(){
+        public synchronized  void test(){//看似锁的时方法 实则锁的时Web对象
             if(ticketNums<=0){
                 flag=false;
                 return;
