@@ -45,6 +45,9 @@ class Drawing extends Thread{
     *
     * */
     public  void test() {
+        if(account.money<=0){//提高性能
+            return;
+        }
         synchronized (account) {
             if (account.money - drawingMoney < 0) {
                 return;
